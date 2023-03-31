@@ -15,7 +15,7 @@ class DhwMusic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '胖丁音乐',
+      title: '胖丁的音乐',
       theme: ThemeData(
         primarySwatch: primary,
         tabBarTheme: tabBarTheme
