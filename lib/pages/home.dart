@@ -1,3 +1,4 @@
+import 'package:dhw_music_app/widget/header.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -5,16 +6,8 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
-    return Center(
-      child: ElevatedButton(
-        style: style,
-        onPressed: () {
-          Navigator.pushNamed(context, '/login');
-        },
-        child: const Text('登录'),
-      ),
+    return Scaffold(
+      body: Header(),
     );
   }
 }

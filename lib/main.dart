@@ -16,11 +16,12 @@ class DhwMusic extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '胖丁的音乐',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: primary,
         tabBarTheme: tabBarTheme
       ),
-      initialRoute: "/login",
+      initialRoute: "/",
       routes: {
         '/': (context) => const Home(),
         '/login':(context) => const Login()
