@@ -1,17 +1,17 @@
 import 'package:dhw_music_app/theme.dart';
-import 'package:dhw_music_app/widget/login_form.dart';
+import 'package:dhw_music_app/pages/login/login_form.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
   State createState() {
-    return _LoginState();
+    return _LoginPageState();
   }
 }
 
-class _LoginState extends State<Login> with TickerProviderStateMixin {
+class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
   late TabController _tabController;
 
   @override

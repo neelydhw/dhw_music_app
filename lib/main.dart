@@ -1,9 +1,9 @@
 import 'package:dhw_music_app/api/hello.dart';
-import 'package:dhw_music_app/pages/login.dart';
+import 'package:dhw_music_app/pages/login/login_page.dart';
 import 'package:dhw_music_app/theme.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/home.dart';
+import 'pages/home/home_page.dart';
 
 void main() {
   runApp(const DhwMusic());
@@ -23,8 +23,8 @@ class DhwMusic extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        '/': (context) => const Home(),
-        '/login':(context) => const Login()
+        '/': (context) => const HomePage(),
+        '/login':(context) => const LoginPage()
       },
     );
   }
